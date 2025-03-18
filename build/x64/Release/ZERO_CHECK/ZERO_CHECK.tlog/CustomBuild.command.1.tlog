@@ -1,0 +1,10 @@
+^C:\USERS\EUGENE\DESKTOP\APP_LIB_SOLUTION\BUILD\CMAKEFILES\08F70AE30401AFE0E3B55E825CA92470\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Eugene/Desktop/app_lib_solution -BC:/Users/Eugene/Desktop/app_lib_solution/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Eugene/Desktop/app_lib_solution/build/app_lib_solution.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
